@@ -519,7 +519,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1468688443}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: GameStart
         m_Mode: 1
@@ -599,53 +599,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1949172118}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &756438242
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 756438244}
-  - component: {fileID: 756438243}
-  m_Layer: 0
-  m_Name: Cliente
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &756438243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756438242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e633a645546e0ef46900bb2f57aad1d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ipServidor: 127.0.0.1
-  porta: 7777
-  lig4Manager: {fileID: 143513694}
---- !u!4 &756438244
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756438242}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.4090066, y: 0.2602782, z: 0.03936781}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &836524855
@@ -1308,7 +1261,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1468688443}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: GameQuit
         m_Mode: 1
@@ -1398,11 +1351,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 114
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 191
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1634,7 +1587,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1468688444}
-  - component: {fileID: 1468688443}
+  - component: {fileID: 1468688445}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1642,21 +1595,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1468688443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468688442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c072814252e79b4cbbfd855cf512a08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  red: {fileID: 8713156238007805620, guid: 38bc3f0b524eb0c4bbbe3dd714928647, type: 3}
-  green: {fileID: 3862011055609218912, guid: 30fcf36d38425ac45a76a1b62c401d24, type: 3}
-  turnMessage: {fileID: 233781183}
 --- !u!4 &1468688444
 Transform:
   m_ObjectHideFlags: 0
@@ -1672,6 +1610,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1468688445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468688442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d888920ecee2594a883566dd838e48b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pecaJogador1: {fileID: 3862011055609218912, guid: 30fcf36d38425ac45a76a1b62c401d24, type: 3}
+  pecaJogador2: {fileID: 8713156238007805620, guid: 38bc3f0b524eb0c4bbbe3dd714928647, type: 3}
+  boardPanel: {fileID: 731099879}
+  textoStatus: {fileID: 1379838739}
+  tcpServer: {fileID: 0}
+  tcpClient: {fileID: 0}
 --- !u!1 &1480322112
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,6 +2073,5 @@ SceneRoots:
   - {fileID: 1709453853}
   - {fileID: 1603652704}
   - {fileID: 143513695}
-  - {fileID: 756438244}
   - {fileID: 2125949724}
   - {fileID: 1066318837}

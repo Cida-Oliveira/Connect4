@@ -1202,9 +1202,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d888920ecee2594a883566dd838e48b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pecaJogador1: {fileID: 3862011055609218912, guid: 30fcf36d38425ac45a76a1b62c401d24, type: 3}
-  pecaJogador2: {fileID: 8713156238007805620, guid: 38bc3f0b524eb0c4bbbe3dd714928647, type: 3}
-  boardPanel: {fileID: 731099879}
+  pecaJogador1: {fileID: 8713156238007805620, guid: 38bc3f0b524eb0c4bbbe3dd714928647, type: 3}
+  pecaJogador2: {fileID: 3862011055609218912, guid: 30fcf36d38425ac45a76a1b62c401d24, type: 3}
+  boardPanel: {fileID: 1193776689}
   textoStatus: {fileID: 1379838739}
   tcpServer: {fileID: 2125949723}
   tcpClient: {fileID: 0}
@@ -3612,7 +3612,6 @@ Transform:
   - {fileID: 969044229}
   - {fileID: 1527469007}
   - {fileID: 2119483891}
-  - {fileID: 1193776689}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &754629922
@@ -6577,7 +6576,7 @@ RectTransform:
   - {fileID: 92877668}
   - {fileID: 1069586379}
   - {fileID: 1287672829}
-  m_Father: {fileID: 731099879}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8074,56 +8073,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8778226923008081185, guid: 02a5319e575ca844da7146c9b15f3c08, type: 3}
   m_PrefabInstance: {fileID: 620740223}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1468688442
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1468688444}
-  - component: {fileID: 1468688445}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1468688444
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468688442}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1468688445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1468688442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d888920ecee2594a883566dd838e48b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pecaJogador1: {fileID: 3862011055609218912, guid: 30fcf36d38425ac45a76a1b62c401d24, type: 3}
-  pecaJogador2: {fileID: 8713156238007805620, guid: 38bc3f0b524eb0c4bbbe3dd714928647, type: 3}
-  boardPanel: {fileID: 731099879}
-  textoStatus: {fileID: 1379838739}
-  tcpServer: {fileID: 2125949723}
-  tcpClient: {fileID: 0}
 --- !u!1 &1471984851
 GameObject:
   m_ObjectHideFlags: 0
@@ -11405,7 +11354,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 928271324}
   - {fileID: 849600173}
-  - {fileID: 1468688444}
   - {fileID: 731099879}
   - {fileID: 1709453853}
   - {fileID: 1603652704}
@@ -11413,3 +11361,4 @@ SceneRoots:
   - {fileID: 2125949724}
   - {fileID: 1066318837}
   - {fileID: 1195246559}
+  - {fileID: 1193776689}

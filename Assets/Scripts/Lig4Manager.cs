@@ -156,6 +156,11 @@ public class Lig4Manager : MonoBehaviour
 
         // Não reenviamos (enviarParaRede = false)
         FazerJogadaLocal(coluna, false, jogadorRemoto);
+
+         // Garante que agora seja o turno do jogador local
+        jogadorAtual = jogadorLocal;
+    AtualizarTextoStatus();
+
     }
 
     // Envia jogada para o outro jogador via rede

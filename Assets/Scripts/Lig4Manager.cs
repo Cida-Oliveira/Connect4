@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class Lig4Manager : MonoBehaviour
 {
-    public GameObject pecaJogador1;  // Verde
+    public GameObject pecaJogador1;  // Amarelo
     public GameObject pecaJogador2;  // Vermelho
     public Transform boardPanel;
     public Text textoStatus;
@@ -15,13 +15,13 @@ public class Lig4Manager : MonoBehaviour
     private int jogadorAtual = 1;   // Quem tem o turno agora (1 ou 2)
     private bool jogoAtivo = true;
 
-    // 1 = Verde (Servidor), 2 = Vermelho (Cliente)
+    // 1 = Amarelo (Servidor), 2 = Vermelho (Cliente)
     private int jogadorLocal = 1;
 
     void Start()
     {
-        jogadorLocal = (PlayerInfo.CorDoJogador == "VERDE") ? 1 : 2;
-        jogadorAtual = 1; // Verde sempre começa
+        jogadorLocal = (PlayerInfo.CorDoJogador == "AMARELO") ? 1 : 2;
+        jogadorAtual = 1; // Amarelo sempre começa
 
         ResetarTabuleiro();
         ConfigurarBotoes();
@@ -156,11 +156,6 @@ public class Lig4Manager : MonoBehaviour
 
         // Não reenviamos (enviarParaRede = false)
         FazerJogadaLocal(coluna, false, jogadorRemoto);
-
-         // Garante que agora seja o turno do jogador local
-        jogadorAtual = jogadorLocal;
-    AtualizarTextoStatus();
-
     }
 
     // Envia jogada para o outro jogador via rede
@@ -346,6 +341,6 @@ public class Lig4Manager : MonoBehaviour
 
     string ObterNomeJogador(int jogador)
     {
-        return jogador == 1 ? "Verde" : "Vermelho";
+        return jogador == 1 ? "Amarelo" : "Vermelho";
     }
 }  

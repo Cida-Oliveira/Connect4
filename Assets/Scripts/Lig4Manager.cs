@@ -20,7 +20,7 @@ public class Lig4Manager : MonoBehaviour
 
     void Start()
     {
-        jogadorLocal = (PlayerInfo.CorDoJogador == "AMARELO") ? 1 : 2;
+        jogadorLocal = (PlayerInfo.CorDoJogador == "VERDE") ? 1 : 2;
         jogadorAtual = 1; // Amarelo sempre começa
 
         ResetarTabuleiro();
@@ -341,6 +341,6 @@ public class Lig4Manager : MonoBehaviour
 
     string ObterNomeJogador(int jogador)
     {
-        return jogador == 1 ? "Amarelo" : "Vermelho";
+        return jogador == 1 ? "Verde" : "Vermelho";
     }
 }  
